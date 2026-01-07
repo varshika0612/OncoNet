@@ -79,7 +79,6 @@ skin-lesion-classification/
 Install dependencies using:
 ```bash```
 pip install -r requirements.txt
-# Medical Image Classification Project
 
 
 ## Results Summary
