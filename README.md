@@ -69,28 +69,41 @@ skin-lesion-classification/
 Install dependencies using:
 ```bash```
 pip install -r requirements.txt
-How to Run
+# Medical Image Classification Project
 
-Download the ISIC dataset and organize it locally.
+## How to Run
 
-Update dataset paths in the notebooks.
+1. **Download the ISIC dataset and organize it locally.**
+2. **Update dataset paths in the notebooks.**
+3. **Run notebooks in the following order:**
+   - `task1_baseline_cnn.ipynb`
+   - `task2_resnet_transfer.ipynb`
+   - `task4_evaluation.ipynb`
 
-Run notebooks in the following order:
+---
 
-task1_baseline_cnn.ipynb
+## Results Summary
 
-task2_resnet_transfer.ipynb
+- The baseline CNN captures local texture features but has limited generalization.
+- ResNet-18 benefits from pretrained hierarchical features and shows improved recall and ROC-AUC.
+- Evaluation metrics beyond accuracy are crucial for medical imaging tasks.
 
-task4_evaluation.ipynb
+---
 
-Results Summary
+## Requirements
 
-The baseline CNN captures local texture features but has limited generalization.
+```bash
+pip install -r requirements.txt
+```
 
-ResNet-18 benefits from pretrained hierarchical features and shows improved recall and ROC-AUC.
+## Dataset
 
-Evaluation metrics beyond accuracy are crucial for medical imaging tasks.
+This project uses the ISIC (International Skin Imaging Collaboration) dataset for skin lesion classification.
 
-Author
+## License
 
-Varshika Cheemala
+MIT License
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
