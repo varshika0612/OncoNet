@@ -19,3 +19,78 @@ Due to size and licensing constraints, the dataset is not included in this repos
 ---
 
 ## Repository Structure
+skin-lesion-classification/
+├── notebooks/
+│ ├── task1_baseline_cnn.ipynb
+│ ├── task2_resnet_transfer.ipynb
+│ └── task4_evaluation.ipynb
+│
+├── models/
+│ ├── baseline_cnn_isic.pth
+│ └── resnet18_isic.pth
+│
+├── README.md
+└── requirements.txt
+
+---
+
+## Tasks Completed
+
+### Task 1: Baseline CNN
+- Designed and trained a CNN from scratch
+- Used convolutional layers, max pooling, and fully connected layers
+- Monitored training and validation performance
+- Saved trained model weights
+
+### Task 2: Transfer Learning with ResNet
+- Used a pretrained ResNet-18 model
+- Replaced the final classification layer to match ISIC categories
+- Fine-tuned the model on the dataset
+- Compared performance with the baseline CNN
+
+### Task 4: Evaluation and Comparison
+- Computed accuracy, precision, recall, F1-score, and ROC-AUC
+- Generated confusion matrices using matplotlib
+- Analyzed class imbalance effects on evaluation metrics
+- Compared CNN vs ResNet performance
+
+*Note:* Due to class imbalance and random splitting, one class was absent in the validation set. ROC-AUC was therefore computed in a one-vs-rest binary setting.
+
+---
+
+## Requirements
+- Python 3.x
+- PyTorch
+- torchvision
+- numpy
+- matplotlib
+- scikit-learn
+
+Install dependencies using:
+```bash```
+pip install -r requirements.txt
+How to Run
+
+Download the ISIC dataset and organize it locally.
+
+Update dataset paths in the notebooks.
+
+Run notebooks in the following order:
+
+task1_baseline_cnn.ipynb
+
+task2_resnet_transfer.ipynb
+
+task4_evaluation.ipynb
+
+Results Summary
+
+The baseline CNN captures local texture features but has limited generalization.
+
+ResNet-18 benefits from pretrained hierarchical features and shows improved recall and ROC-AUC.
+
+Evaluation metrics beyond accuracy are crucial for medical imaging tasks.
+
+Author
+
+Varshika Cheemala
