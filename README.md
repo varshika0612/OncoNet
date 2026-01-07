@@ -14,22 +14,32 @@ The goal is to understand architectural differences in feature extraction and ev
 - High-resolution RGB images
 - Multi-class diagnostic labels
 
-Due to size and licensing constraints, the dataset is not included in this repository. Users should download it separately from the official ISIC website.
 
 ---
 
 ## Repository Structure
 skin-lesion-classification/
+
 ├── notebooks/
+
 │ ├── task1_baseline_cnn.ipynb
+
 │ ├── task2_resnet_transfer.ipynb
+
 │ └── task4_evaluation.ipynb
+
 │
+
 ├── models/
+
 │ ├── baseline_cnn_isic.pth
+
 │ └── resnet18_isic.pth
+
 │
+
 ├── README.md
+
 └── requirements.txt
 
 ---
@@ -71,16 +81,6 @@ Install dependencies using:
 pip install -r requirements.txt
 # Medical Image Classification Project
 
-## How to Run
-
-1. **Download the ISIC dataset and organize it locally.**
-2. **Update dataset paths in the notebooks.**
-3. **Run notebooks in the following order:**
-   - `task1_baseline_cnn.ipynb`
-   - `task2_resnet_transfer.ipynb`
-   - `task4_evaluation.ipynb`
-
----
 
 ## Results Summary
 
@@ -90,20 +90,7 @@ pip install -r requirements.txt
 
 ---
 
-## Requirements
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Dataset
 
 This project uses the ISIC (International Skin Imaging Collaboration) dataset for skin lesion classification.
-
-## License
-
-MIT License
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
